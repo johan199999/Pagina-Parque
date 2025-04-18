@@ -16,10 +16,11 @@ footer {
     background-color: #000;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
     position: relative;
     bottom: 0;
     width: 100%;
+    height: 70px;
 }
 
 </style>

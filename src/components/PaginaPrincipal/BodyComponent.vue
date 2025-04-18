@@ -3,7 +3,7 @@
 
 <header>
     <div>
-        <img src='../assets/logo.jpg' alt="Logo" style="height: 50px;">
+        <img src='../assets/logo.png' alt="Logo" style="height: 50px;">
         <span>Park Entertainment</span>
     </div>
     <nav>

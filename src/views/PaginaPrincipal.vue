@@ -1,28 +1,41 @@
 <template>
-    <div>
-    <HeaderComponente></HeaderComponente>
-    <BodyComponente></BodyComponente>
-    <FooterComponente></FooterComponente>
-    </div>
+  <div>
+    <HeaderComponent></HeaderComponent>
+    <SobreParqueComponent></SobreParqueComponent>
+    <CaracteristicasComponent></CaracteristicasComponent>
+    <ServiciosComponent></ServiciosComponent>
+    <NoticiasComponent></NoticiasComponent>
+    <FooterComponent></FooterComponent>
+ 
+  </div>
 </template>
 
 <script>
-//import HeaderComponente from '@/components/BodyComponente.vue';
-import BodyComponente from '@/components/BodyComponente.vue';
-//import FooterComponente from '@/components/FooterComponente.vue';
+import HeaderComponent from '../components/PaginaPrincipal/HeaderComponent.vue';
+import SobreParqueComponent from '../components/PaginaPrincipal/SobreParqueComponent.vue';
+import CaracteristicasComponent from '../components/PaginaPrincipal/CaracteristicasComponent.vue';
+import NoticiasComponent from '../components/PaginaPrincipal/NoticiasComponent.vue';
+import FooterComponent from '../components/PaginaPrincipal/FooterComponent.vue';
+import ServiciosComponent from '../components/PaginaPrincipal/Servicioscomponent.vue';
 
 export default {
-
-    name: 'PaginaPrincipal',
-
+  name: 'PaginaPrincipal',
   components: {
-    //HeaderComponente,
-    BodyComponente,
-    //FooterComponente,
+    HeaderComponent,
+    SobreParqueComponent,
+    CaracteristicasComponent,
+    ServiciosComponent,
+    NoticiasComponent,
+    FooterComponent,
+ 
   },
 };
 </script>
 
 <style>
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 </style>

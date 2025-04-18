@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import PaginaPrincipal from "@/views/PaginaPrincipal.vue";
+import PaginaPrincipal from '../views/PaginaPrincipal.vue';
 
 const routes = [
     { path: '/Paginaprincipal', component: PaginaPrincipal }
