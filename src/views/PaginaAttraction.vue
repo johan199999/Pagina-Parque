@@ -27,14 +27,11 @@ components: {
   
 }
 
-.header-spacing {
-  margin-bottom: 60px;
-  min-height: 100px;
+div {
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  margin-bottom: 5rem;
 }
-
-.footer-spacing {
-  margin-top: 60px;
-  min-height: 100px;
-}
-
 </style>
+
+

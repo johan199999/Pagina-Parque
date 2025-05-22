@@ -67,20 +67,43 @@ export default {
 
 <style scoped>
 .eventos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 4rem;
+  grid-row-gap: 2rem;
   padding: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .eventos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 1.5rem;
+    max-width: 100%;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .eventos {
+    grid-template-columns: 1fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    padding: 1rem;
+  }
 }
 
 .evento {
   background-color: white;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   max-width: 300px;
   overflow: hidden;
   transition: transform 0.3s;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .evento:hover {
@@ -89,7 +112,8 @@ export default {
 
 .evento img {
   width: 100%;
-  height: auto;
+  height: 200px;
+  object-fit: cover;
 }
 
 .contenido {
