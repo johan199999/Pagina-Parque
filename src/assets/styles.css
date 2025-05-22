@@ -1,0 +1,205 @@
+
+@media only screen and (max-width: 600px) {
+  
+  body, #app {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 14px;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  
+  .section, .card-container, .eventos, .news-list, .service-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  
+  .card {
+    width: 100% !important;
+    margin: 0 auto 10px auto;
+    box-sizing: border-box;
+  }
+
+  
+  .reserva {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  
+  .btn-reservar,
+  .btn-regresar,
+  .btn-confirmar,
+  .btn-cancelar {
+    width: 100% !important;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  
+  .news-article {
+    width: 100% !important;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-sizing: border-box;
+  }
+
+  
+  .nav-con-clima {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: none;
+    overflow: visible;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  
+  .nav-con-clima.active {
+    max-height: none; 
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  
+  .nav-con-clima.inactive {
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+  }
+
+  
+  .features {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+  }
+
+  
+  .clima-parque {
+    font-size: 14px;
+  }
+
+  
+  .accordion-label,
+  .accordion-content {
+    font-size: 14px;
+  }
+
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1.2em;
+  }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  
+  body, #app {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 16px;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  
+  .section, .card-container, .eventos, .news-list, .service-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  
+  .card {
+    width: 45%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+
+  
+  .reserva {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  
+  .btn-reservar,
+  .btn-regresar,
+  .btn-confirmar,
+  .btn-cancelar {
+    width: auto;
+    min-width: 40%;
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+
+  
+  .news-article {
+    width: 45%;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+  }
+
+  
+  .nav-con-clima {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .nav-con-clima.active,
+  .nav-con-clima.inactive {
+    transform: none;
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  
+  .features {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+    text-align: center;
+  }
+
+  
+  .clima-parque {
+    font-size: 16px;
+  }
+
+  
+  .accordion-label,
+  .accordion-content {
+    font-size: 16px;
+  }
+
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1.5em;
+  }
+}
+

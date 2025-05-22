@@ -1,6 +1,5 @@
 <template>
   <div>
-    <HeaderComponent></HeaderComponent>
     <SobreParqueComponent></SobreParqueComponent>
     <CaracteristicasComponent></CaracteristicasComponent>
     <ServiciosComponent></ServiciosComponent>
@@ -11,7 +10,6 @@
 </template>
 
 <script>
-import HeaderComponent from '../components/PaginaPrincipal/HeaderComponent.vue';
 import SobreParqueComponent from '../components/PaginaPrincipal/SobreParqueComponent.vue';
 import CaracteristicasComponent from '../components/PaginaPrincipal/CaracteristicasComponent.vue';
 import NoticiasComponent from '../components/PaginaPrincipal/NoticiasComponent.vue';
@@ -21,7 +19,6 @@ import ServiciosComponent from '../components/PaginaPrincipal/Servicioscomponent
 export default {
   name: 'PaginaPrincipal',
   components: {
-    HeaderComponent,
     SobreParqueComponent,
     CaracteristicasComponent,
     ServiciosComponent,

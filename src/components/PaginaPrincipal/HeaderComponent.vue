@@ -1,69 +1,82 @@
 <template>
   <header>
-    <div>
+    <div class="logo-nombre">
+      <router-link to="/paginaprincipal">
         <img src="../../assets/logo.png" alt="Logo" style="height: 50px;">
-        <span>Park Entertainment</span>
+      </router-link>
+      <span>Park Entertainment</span>
     </div>
-    <nav>
-        <a href="">  Parques </a>
-        <a href="">  Atracciones </a>
-        <a href="">  Eventos </a>
-        <a href="">  Contacto </a>
+    <nav class="nav-con-clima">
+      <router-link to="/paginaTipos">Parques</router-link>
+      <router-link to="/paginaattraction">Atracciones</router-link>
+      <router-link to="/paginaeventos">Eventos</router-link>
+      <router-link to="/paginanoticias">Noticias</router-link>
+      
+      <ClimaParque />
     </nav>
-</header>
+  </header>
 </template>
 
 <script>
-export default {
-    name: 'HeaderComponente'
+import ClimaParque from './ClimaParque.vue';
 
+export default {
+  name: 'HeaderComponente',
+  components: {
+    ClimaParque
+  }
 };
 </script>
 
 <style scoped>
 header {
-    background-color: #000; 
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+  background-color: #000; 
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
 
-header div {
-    display: flex;
-    align-items: center;
+.logo-nombre {
+  display: flex;
+  align-items: center;
+}
+
+nav.nav-con-clima {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 nav a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: white;
-    position: relative;
-    transition: color 0.3s ease;
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  transition: color 0.3s ease;
 }
 
 nav a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -4px;
-    left: 0;
-    background-color: white;
-    transition: width 0.3s ease;
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: white;
+  transition: width 0.3s ease;
 }
 
 nav a:hover {
-    color: #ddd;
+  color: #ddd;
 }
 
 nav a:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 nav a:first-child {
-    margin-left: 0;
+  margin-left: 0;
 }
-
 </style>

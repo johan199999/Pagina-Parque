@@ -75,7 +75,7 @@ export default {
 }
 
 .service:hover .accordion-content {
-  max-height: 500px; /* suficiente para mostrar el contenido */
+  max-height: 500px; 
   padding: 10px;
 }
 </style>

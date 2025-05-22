@@ -83,7 +83,7 @@ export default {
 }
 
 .leer-btn {
-  background-color: #333;
+  background-color: #050505;
   color: white;
   border: none;
   border-radius: 5px;
